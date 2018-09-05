@@ -1,1 +1,2 @@
 # myblog
+django project myblog
