@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset='utf-8'>
+  <title>MyPlayer</title>
+</head>
+<body>
+  <div id="menu" style="clear:both;text-align:center;">
+    <h4>Test Player</h4>
+  </div>
+  <div id="playercontainer"></div>
+    <script type="text/javascript" src="/static/Baidu-T5Player-SDK-Web-v3.4.0/player/cyberplayer.js"></script>
+    <script type="text/javascript">
+        var player = cyberplayer("playercontainer").setup({
+        width : 580,
+        height : 433,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "<Media_Source_In_BOS_Bucket>",
+        ak : "<AK>",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "over"
+        });
+    </script>
+</body>
+</html>
