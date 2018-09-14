@@ -21,7 +21,11 @@ TEMPLATE_DIRS = (
 
 DIST_DIR = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
-STATIC_ROOT = DIST_DIR
+STATIC_ROOT = BASE_DIR
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+
 PICTURE_ROOT = ''
 
 # Quick-start development settings - unsuitable for production
