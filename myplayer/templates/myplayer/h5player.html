@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset='utf-8'>
+  <title>MyPlayer</title>
+  <script src="/static/Baidu-T5Player-SDK-Web-v3.4.0/player/videojs/video.min.js"></script>
+</head>
+<body>
+  <div id="menu" style="clear:both;text-align:center;">
+    <h4>Test H5 Player</h4>
+  </div>
+  <video id="my-video" width="800" height="600">
+    <source src="" type='rtmp/flv'/>
+  </video>
+  <script src="/static/Baidu-T5Player-SDK-Web-v3.4.0/player/videojs/videojs-contrib-hls.min.js"></script>
+  <script src="/static/Baidu-T5Player-SDK-Web-v3.4.0/player/videojs/videojs-contrib-quality-levels.min.js"></script>
+  <script>
+    var player = videojs('my-video');
+    player.play();
+  </script>
+</body>
+</html>
