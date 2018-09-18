@@ -17,12 +17,17 @@
         backcolor : "#FFFFFF",
         stretching : "uniform",
 
-        file : "<Media_Source_In_BOS_Bucket>",
-        ak : "<AK>",
+        file : "http://play.gtapp.xyz/wechat/weige/wechat/weige.m3u8",
+        ak : "",
         autoStart : true,
         repeat : false,
         volume : 100,
-        controls : "over"
+        controls : true,
+        isLive : true,
+        rtmp: {
+            reconnecttime: 5,
+            bufferlength: 1
+        },
         });
     </script>
 </body>
