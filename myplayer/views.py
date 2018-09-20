@@ -7,4 +7,4 @@ from datetime import datetime
 
 def player(request):
     post_list = Myplayer.objects.all()
-    return render(request, 'myplayer/player.html', {'post_list' : post_list})
+    return render(request, 'myplayer/player_hls.html', {'post_list' : post_list})

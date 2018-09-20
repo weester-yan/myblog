@@ -32,4 +32,5 @@ urlpatterns = [
     image_url(),
     url('article/', include('article.urls')),
     url('myplayer/', include('myplayer.urls')),
+    url('rtmp/', include('rtmpstreamer.urls')),
 ]
